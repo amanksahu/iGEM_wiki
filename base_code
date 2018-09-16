@@ -6,6 +6,7 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+
 <meta name="viewport" content="width=device-width, initial-scale=1">    
 
 <style>
@@ -16,7 +17,26 @@
  @import 'https://fonts.googleapis.com/css?family=Raleway';
 
 
-
+.fx:hover{
+color:darkblue;
+transform:translateY(-6px);
+}
+.fx1:hover{
+color:lightpink;
+transform:translateY(-6px);
+}
+.fx2:hover{
+color: skyblue;
+transform:translateY(-6px);
+}
+    .fxm:hover{
+        color: indianred;
+        transform: translateY(-6px);
+    }
+    .fxln:hover{
+        color: #0077B5;
+        transform: translateY(-6px);
+    }
 
 
 
@@ -26,6 +46,8 @@
 	font-size: 15pt;
 	font-weight: 300;
 	line-height: 1.65em;
+        margin: 0;
+        width: auto;
 	}
 
 	
@@ -43,12 +65,21 @@
 	background-size: cover ;
                
 	color: #ffffff;
+        width: 100%;
+        height: 100%;
 	padding: 27.5em 0em 1em;
 	text-align: center;
 padding-bottom: 150px;
 
 	}
-
+#globalWrapper {
+    position: relative;
+   /* font-size: 127%; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
 	
 
 /* Footer */
@@ -177,17 +208,6 @@ padding-bottom: 150px;
     padding-left: 30px;
 }
 /*end of overlay*/
-    
-    i:nth-child(1) {
-       font-size: 100px;
-       color: #253154;
-       margin-left: 500px;
-       cursor: pointer;
-        position: relative;
-       margin-bottom: 15px;
-       box-shadow: -5px 8px 8px 2px;
-       transition: width 2s;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 
@@ -226,7 +246,7 @@ height: auto;
     margin: 0 auto;
     
 	padding-top: 1em ;
-    padding-right: 16em;
+    padding-right: 16%;
 	text-align: center;
     overflow: hidden;
     background-color: black;
@@ -345,6 +365,17 @@ div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
   height: 1500px; 
   z-index: 0;
 }
+   
+    
+    @media screen and (max-width: 1300px){
+        .navbar a{display: none;}
+        .navbar .icon {
+            float:  right;
+            display: block;
+        }
+        
+    }    
+    
     
 </style>
     
@@ -468,8 +499,9 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
     </head>
 
      <body>
-          
-         <a name="top"></a>
+   <div id="globalWrapper">          
+         
+       <a name="top"></a>
 
          <div style="background-color: black;"><img src="Logo%20Circle%20Background.jpg" style="height: 150px; width: 160px; display:block; padding-left: 45%;margin-top: 20px">
          </div>
@@ -558,8 +590,9 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
         </div>
     </div>
     
- 
-        
+  <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <i class="fa fa-bars"> </i>
+        </a>       
         
 </div>
 
@@ -652,7 +685,7 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
 
 		
 <center><div class="panel_back bggg">
-      <header class="major">
+      <header>
         
         
             <h2 class="h2font">Abstract</h2>
@@ -673,51 +706,20 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
           	</div>
          </center>
     <!--/**/-->
-<div>
-    <div style="text-align: center; background-color: darkorange; font-size: 16px;">
-    <h1>Contact us</h1>
-    </div>
-   <div>
-    <!--<i class="fa fa-facebook-official"></i>-->
-    <img src="GMail%20Logo.png" style="height: 100px; width: 80px; display:block; padding-left: 48%;margin-top: 20px; margin-bottom: 20px;box-shadow: -5px 7px 8px;">
-    <img src="facebook_logos_PNG19750.png" style="height: 100px; width: 80px; display:block; padding-left: 12%;margin-top: -120px; margin-bottom: 20px;box-shadow: -5px 7px 8px;">
-     <img src="Insta%20Logo.png" style="height: 100px; width: 80px; display:block; padding-left: 30%;margin-top: -120px; margin-bottom: 20px;box-shadow: -5px 7px 8px;">
-    <img src="twitterlogo.png" style="height: 140px; width: 100px; display:block; padding-left: 66%;margin-top: -160px; margin-bottom: 20px;box-shadow: -5px 7px 8px;">
-    <img src="WWW.png" style="height: 100px; width: 80px; display:block; padding-left: 80%;margin-top: -120px; margin-bottom: 20px;box-shadow: -5px 7px 8px;">
+
         
+		 <div>
+        <div  style="background-color: dimgray;font-size: 35px;text-align: center;font-family: sans-serif;"><h5 style="color: azure">Contact us</h5></div>
+            <div style="text-align: center;margin-bottom: -100px;"><h4 style="font-size: 50px;"><u class="fx" style="cursor: pointer;">Address</u></h4><p style="">Undergraduate Laboratory<br>
+Department of Biotechnology and Biochemical Engineering, IIT Delhi</p> 
+            </div>
+        <div style="margin-left: 75%;height: auto;max-height: inherit;width: auto;max-width: inherit;"><i class="fa fa-facebook-official fx" style="font-size:90px;transition: 0.5s;transition-duration: 0.3s;transition-property: transform;margin-bottom: 30px;"></i></div>
+        <div style="height: auto;max-height: inherit;width: auto;max-width: inherit; margin-left: 25%;margin-top: -125.5px;display: block;"><i class="fa fa-linkedin fxln" style="font-size:90px;transition: 0.5s;transition-duration: 0.3s;transition-property: transform;margin-bottom: 30px;"></i></div>
+            
+        <div style="margin-left: 90%;margin-top: -120px;display: block;height: auto;max-height: inherit;width: auto;max-width: inherit;"><i class="fa fa-instagram fx1" style="font-size:90px;transition: 0.5s;transition-duration: 0.3s;transition-property: transform;margin-bottom: 30px;"></i></div>
+         <div style="margin-left: 8%;margin-top: -120px;display: block;height: auto;max-height: inherit;width: auto;max-width: inherit;"><i class="fa fa-envelope fxm" style="font-size:90px;transition: 0.5s;transition-duration: 0.3s;transition-property: transform;margin-bottom: 30px;"></i></div>
     </div>
          </div>
-        
-		<!-- Footer --
-		<footer id="footer">
-		<table  style="font-family:'Lato'; border: 0px solid black; ">
-        <tr align="center"  >
-        	<td align="center" width="50%" colspan="2" class="tr2"><div class="tr4">Sponsored By</div></td></tr>
-        <tr align="center" >   
-        	<td align="center" width="50%" colspan="2"><b><img src= "http://2017.igem.org/wiki/images/1/1e/T--IIT_DELHI--sponsotstrip.jpg" class="width-max"></b></td></tr>
-
-         <tr align="right" >
-            <td align="center" width="50%" class="tr3"><div class="tr4">Contact Us</div></td>
-            <td align="center"  class="tr3"><div class="tr4">Address</div></td>
-         </tr>
-         
-         <tr align="center" >
-            <td align="center" style="padding-top: 5px;" class="tr2">
-			 <br>
-			<a href="https://www.facebook.com/igemiitdelhi/"><i class="fa igem_iitd-hover-opacity"><img src="http://2017.igem.org/wiki/images/f/f5/T--IIT_DELHI--foot_1.jpg"  height="50px" width="50px"></i></a>
-    		<!--<i class="fa igem_iitd-hover-opacity"><img src="http://2017.igem.org/wiki/images/d/dd/T--IIT_DELHI--foot_4.jpg" height="50px" width="50px"></i>--
-    		<a href="https://www.linkedin.com/company/igemiitdelhi/"><i class="fa igem_iitd-hover-opacity"><img src="http://2017.igem.org/wiki/images/a/ac/T--IIT_DELHI--foot_3.jpg" height="50px" width="50px"></i></a>
-    		<!--<i class="fa igem_iitd-hover-opacity"><img src="http://2017.igem.org/wiki/images/2/29/T--IIT_DELHI--foot_5.jpg" height="50px" width="50px"></i>--
-    		<a href="https://twitter.com/igem_iit_delhi?lang=en"><i class="fa igem_iitd-hover-opacity"><img src="http://2017.igem.org/wiki/images/2/23/T--IIT_DELHI--foot_2.jpg" height="50px" width="50px"></i></a>
-</td>
-			
-           <td align = "center"   style="padding-top: 0px;" class="tr2">
-			<center> <p  style="text-align: center; color:white; font-size: 80%;">E-mail: iitd.igem@gmail.com<br>Undergraduate Laboratory<br>Department of Biotechnology and Biochemical Engineering, IIT Delhi</p></center>
-											
-         	</tr>
-      		</table>
-			</footer>
-    </center>-->
         <script>
 
 
