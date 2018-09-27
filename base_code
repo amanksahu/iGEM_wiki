@@ -48,6 +48,7 @@ transform:translateY(-6px);
         margin: 0;
         width: auto;
         min-width: 800px;
+        
 	}
 
 	
@@ -129,7 +130,7 @@ padding-bottom: 150px;
     
      #globalWrapper{
         transition: 0.5s;
-        overflow-x: hidden;
+       
     }
 
 	#footer .copyright li {
@@ -769,9 +770,11 @@ Department of Biotechnology and Biochemical Engineering, IIT Delhi</p>
     function openNav() {
     document.getElementById("myNav").style.width = "50%";
         document.getElementById("globalWrapper").style.width = "50%";
+       
         document.getElementById("globalWrapper").style.paddingLeft = "50%";
-        document.getElementById("globalWrapper").style.overflowX = "hidden";
-        document.getElementById("globalWrapper").style.overflowY = "hidden";
+        document.body.style.overflowX = "hidden";
+        document.body.style.overflowY = "hidden";
+        
     var Main = document.getElementById("mainBar")
          {
         Main.classList.add("Fixed");
@@ -780,10 +783,10 @@ Department of Biotechnology and Biochemical Engineering, IIT Delhi</p>
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-      document.getElementById("globalWrapper").style.width = "50%";
-        document.getElementById("globalWrapper").style.paddingLeft = "50%";
-      document.getElementById("globalWrapper").style.overflowX = "initial";
-        document.getElementById("globalWrapper").style.overflowY = "initial";
+      document.getElementById("globalWrapper").style.width = "100%";
+        document.getElementById("globalWrapper").style.paddingLeft = "0%";
+      document.body.style.overflowX = "initial";
+        document.body.style.overflowY = "initial";
     
     var Main = document.getElementById("mainBar")
          {
