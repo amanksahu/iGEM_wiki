@@ -774,6 +774,8 @@ Department of Biotechnology and Biochemical Engineering, IIT Delhi</p>
         document.getElementById("globalWrapper").style.paddingLeft = "50%";
         document.body.style.overflowX = "hidden";
         document.body.style.overflowY = "hidden";
+         document.getElementById("globalWrapper").style.overflowX = "inherit";
+         document.getElementById("globalWrapper").style.overflowY = "inherit";
         
     var Main = document.getElementById("mainBar")
          {
@@ -787,6 +789,10 @@ function closeNav() {
         document.getElementById("globalWrapper").style.paddingLeft = "0%";
       document.body.style.overflowX = "initial";
         document.body.style.overflowY = "initial";
+         document.getElementById("globalWrapper").style.overflowX = "inherit";
+         document.getElementById("globalWrapper").style.overflowY = "inherit";
+
+    
     
     var Main = document.getElementById("mainBar")
          {
