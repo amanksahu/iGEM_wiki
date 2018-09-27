@@ -126,6 +126,11 @@ padding-bottom: 150px;
 	padding: 0;
 	text-align: center;
 	}
+    
+     #globalWrapper{
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
 
 	#footer .copyright li {
 	border-left: solid 1px rgba(144, 144, 144, 0.25);
@@ -143,19 +148,21 @@ padding-bottom: 150px;
     </style>
 
 <style>
-        .overlay {
+  
+      .overlay {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     left: 0;
+            
         /*background-image: url("G:\documents\IITD\others\igem\web_development\local_portrait.jpg");
         background-size: 300px 800px;*/
        /* margin-top: 100px;*/
     /*background-color: rgb(1,1,1);
     background-color: rgba(0,0,0, 0.9);*/
-       background-color: black;
+       background-color: white;
         /*background-color: rgba(255,255,255,0.9);*/
     overflow-x: hidden;
     transition: 0.5s;
@@ -171,7 +178,7 @@ padding-bottom: 150px;
 }
 
 .overlay a, .overlay-btn {
-    padding: 8px;
+    padding: 20px;
     padding-left: 15px;
     cursor: pointer;
     text-decoration: none;
@@ -180,8 +187,15 @@ padding-bottom: 150px;
     display: block;
     transition: 0.3s;
      position: relative;
-    
+    background-color: white;
     width: 100%;
+    font-family: Arial;
+    border-width: 0;
+    border-color: white;
+    border-style: none;
+    border-image: none;
+    outline: none;
+    font-size: 20px;
     text-align: left;
     margin-top: 0px;
     float: left;
@@ -189,13 +203,14 @@ padding-bottom: 150px;
     /*background: none;*/
 }
 
+    
     .fa-caret-right {
     float: right;
     padding-right: 8px;
 }
     
 .overlay a:hover, .overlay a:focus, .overlay-btn:hover {
-    color: blueviolet;
+    color: darkred;
 }
 
 
@@ -618,84 +633,91 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
         
 </div>
 
-	<div class= "overlay" id="myNav">
+       <div class= "overlay" id="myNav">
  
     
 <!--     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
     
     <div class="overlay-content">
     
- <button class="overlay-btn" onclick="myFunction1()">Team
+ <button class="overlay-btn" style="padding-bottom: 15px;"  onclick="myFunction1()">Team
            <i class="fa fa-caret-right"></i>    
     </button>
     
         
         
-    <div class="dropdown-container" id="myDropdown1">
-    <a href="#">Team Members</a>
-    <a href="#">Collaborations</a>
+    <div class="dropdown-container" id="myDropdown1" style= "font-style: italic; ">
+    <a href="#" style="font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px;">Team Members</a>
+    <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
+                       padding-bottom: 0px;" >Collaborations</a>
      </div>
     
-    <button class="overlay-btn" onclick="myFunction2()">Project
+    <button class="overlay-btn" onclick="myFunction2()" style="padding-bottom: 15px;">Project
        <i class="fa fa-caret-right"></i>  
     </button>
     
-    <div class="dropdown-container" id="myDropdown2">
-    <a href="#">Description</a>
-    <a href="#">Design</a>
-            <a href="#">Experiments</a>
-            <a href="#">Notebook</a>
-            <a href="#">Interlab</a>
-            <a href="#">Model</a>
-            <a href="#">Results</a>
-            <a href="#">Demonstration</a>
-            <a href="#">Improve</a>
-            <a href="#">Attributions</a>
+    <div class="dropdown-container" id="myDropdown2" style= "font-style: italic;">
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 3px;" >Description</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Design</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px; " >Experiments</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px; " >Notebook</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Interlab</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;">Model</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Results</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Demonstration</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Improve</a>
+            <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
+                       padding-bottom: 3px;" >Attributions</a>
      </div>
     
-     <button class="overlay-btn" onclick="myFunction3()">Parts
+     <button class="overlay-btn" onclick="myFunction3()" style="padding-bottom: 15px;" >Parts
        <i class="fa fa-caret-right"></i>  
     </button>
     
-    <div class="dropdown-container" id="myDropdown3">
-    <a href="#">Parts Overview</a>
-    <a href="#">Basic Parts</a>
-    <a href="#">Composite Parts</a>
-    <a href="#">Part Collection</a>
+    <div class="dropdown-container" id="myDropdown3" style= "font-style: italic;"  >
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px; " >Parts Overview</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Basic Parts</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Composite Parts</a>
+    <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
+                       padding-bottom: 0px;" >Part Collection</a>
      </div>
     
-     <a href="#safety">Safety</a>
+     <a href="#safety" style="padding-bottom: 15px;padding-top: 15px;" >Safety</a>
     
-     <button class="overlay-btn" onclick="myFunction4()">Human Practices
+     <button class="overlay-btn" onclick="myFunction4()" style="padding-bottom: 15px;padding-top: 15px;"  >Human Practices
      <i class="fa fa-caret-right"></i>  
     </button>
     
-    <div class="dropdown-container" id="myDropdown4">
-    <a href="#">Human Practices</a>
-    <a href="#">Education and Engagement</a>
+    <div class="dropdown-container" id="myDropdown4" style= "font-style: italic;">
+    <a href="#" style="font-size: 15px; font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px;" >Human Practices</a>
+    <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
+                       padding-bottom: 0px;" >Education and Engagement</a>
      </div>
     
-    <button class="overlay-btn" onclick="myFunction5()">Awards
+    <button class="overlay-btn" onclick="myFunction5()" style="padding-bottom: 15px;" >Awards
       <i class="fa fa-caret-right"></i>  
     </button>
     
-     <div class="dropdown-container" id="myDropdown5">
-    <a href="#">Applied Design</a>
-    <a href="#">Entrepreneurship</a>
-            <a href="#">Hardware</a>
-            <a href="#">Measurement</a>
-            <a href="#">Model</a>
-            <a href="#">Plant</a>
-            <a href="#">Software</a>
+     <div class="dropdown-container" id="myDropdown5" style= "font-style: italic;">
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px; " >Applied Design</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Entrepreneurship</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Hardware</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Measurement</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Model</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Plant</a>
+            <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
+                       padding-bottom: 0px;" >Software</a>
 
      </div>
         
-     <a href="#">Judging Form</a>
+     <a href="#" style="padding-bottom: 15px;padding-top: 15px;" >Judging Form</a>
     </div>
     
 </div>
 	
 
+       
+	
 	<!-- Banner -->
 				<section id="banner">
 				
@@ -732,7 +754,7 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
         
 		 <div>
         <div  style="background-color: dimgray;font-size: 35px;text-align: center;font-family: sans-serif;"><h5 style="color: azure">Contact us</h5></div>
-            <div style="text-align: center;margin-bottom: -100px;"><h4 style="font-size: 50px;"><u class="fx" style="cursor: pointer;">Address</u></h4><p style="">Undergraduate Laboratory<br>
+            <div style="text-align: center;margin-bottom: -136px;"><h4 style="font-size: 50px;"><u class="fx" style="cursor: pointer;">Address</u></h4><p style="">Undergraduate Laboratory<br>
 Department of Biotechnology and Biochemical Engineering, IIT Delhi</p> 
             </div>
         <div style="margin-left: 75%;height: auto;max-height: inherit;width: auto;max-width: inherit;margin-bottom: 8px;"><i class="fa fa-facebook-official fx" style="font-size:90px;transition: 0.5s;transition-duration: 0.3s;transition-property: transform;margin-bottom: 30px;"></i></div>
@@ -744,10 +766,12 @@ Department of Biotechnology and Biochemical Engineering, IIT Delhi</p>
          </div>
         <script>
 
-
     function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-        
+    document.getElementById("myNav").style.width = "50%";
+        document.getElementById("globalWrapper").style.width = "50%";
+        document.getElementById("globalWrapper").style.paddingLeft = "50%";
+        document.getElementById("globalWrapper").style.overflowX = "hidden";
+        document.getElementById("globalWrapper").style.overflowY = "hidden";
     var Main = document.getElementById("mainBar")
          {
         Main.classList.add("Fixed");
@@ -756,13 +780,20 @@ Department of Biotechnology and Biochemical Engineering, IIT Delhi</p>
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+      document.getElementById("globalWrapper").style.width = "50%";
+        document.getElementById("globalWrapper").style.paddingLeft = "50%";
+      document.getElementById("globalWrapper").style.overflowX = "initial";
+        document.getElementById("globalWrapper").style.overflowY = "initial";
     
     var Main = document.getElementById("mainBar")
          {
         Main.classList.remove("Fixed");
          }
 }
-    
+
+            
+            
+            
 function myFunction1() {
     document.getElementById("myDropdown1").classList.toggle("show");
     
@@ -785,7 +816,7 @@ function myFunction1() {
        prev5.classList.remove("show");
 }
 
-function myFunppction2() {
+function myFunction2() {
     document.getElementById("myDropdown2").classList.toggle("show");
     
     var prev1 = document.getElementById("myDropdown1");
