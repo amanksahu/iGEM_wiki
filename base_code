@@ -5,7 +5,8 @@
 <head>
   <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
-
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    
 <meta name="viewport" content="width=device-width, initial-scale=1">    
 
 <style>
@@ -15,7 +16,28 @@
 @import 'https://fonts.googleapis.com/css?family=Boogaloo';
  @import 'https://fonts.googleapis.com/css?family=Raleway';
 
-
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+    
+    hr {
+    height: 0;
+  /*  -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box; */
+    box-sizing: content-box;
+}
+ 
+    hr {
+    display: block;
+    unicode-bidi: isolate;
+       overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+    
 .fx:hover{
 color:darkblue;
 transform:translateY(-6px);
@@ -41,7 +63,7 @@ transform:translateY(-6px);
 
 	body, input, select, textarea {
 	color: #444;
-	font-family: 'Boogaloo', Helvetica, sans-serif;
+	font-family:  Helvetica, sans-serif;
 	font-size: 15pt;
 	font-weight: 300;
 	line-height: 1.65em;
@@ -210,7 +232,10 @@ padding-bottom: 150px;
     padding-right: 8px;
 }
     
-.overlay a:hover, .overlay a:focus, .overlay-btn:hover {
+    .overlay-btn2{
+        outline: none;
+    }
+.overlay a:hover, .overlay a:focus, .overlay-btn:hover, .overlay-btn2:hover {
     color: darkred;
 }
 
@@ -548,28 +573,37 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
        
 	<div class = "navbar">
 	
+          <div class="dropdown">
+   <div class= "borderYtoX">   
+        
+         <a href="javascript:void(0)"> Notebook </a>
+        
+    </div>
+    <div class="dropdown-content"  style="margin-top: 62px;">
+      <a href="http://2018.igem.org/Team:IIT_Delhi/Team">Lab Records</a>
+      <a href="http://2018.igem.org/Team:IIT_Delhi/Collaborations">Protocol</a>
+              <a href="http://2018.igem.org/Team:IIT_Delhi/Collaborations">Recipes</a>
+                      <a href="http://2018.igem.org/Team:IIT_Delhi/Collaborations">Medal Criteria</a>
+        </div>
+    </div>
+    
+        
                                                          
-	<div class= "borderYtoX">
-   <a href="http://igem.org/2018_Judging_Form?team=IIT_Delhi" >Judging Form</a>
-    </div>
-    
       <div class="dropdown">
-          <div class= "borderYtoX">
-     <a href="javascript:void(0)"> Awards </a>      
-  
-         </div>
-  
-    <div class="dropdown-content" style="margin-top: 62px;">
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Applied_Design">Applied Design</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Entrepreneurship">Entrepreneurship</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Hardware">Hardware</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Measurement">Measurement</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Model">Model</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Plant">Plant</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Software">Software</a>
+   <div class= "borderYtoX">   
+        
+         <a href="javascript:void(0)"> Team </a>
+        
     </div>
-  </div>
+    <div class="dropdown-content"  style="margin-top: 62px;">
+      <a href="http://2018.igem.org/Team:IIT_Delhi/Team">Members</a>
+      <a href="http://2018.igem.org/Team:IIT_Delhi/Collaborations">Attributions</a>
+              <a href="http://2018.igem.org/Team:IIT_Delhi/Collaborations">Sponsors</a>
+        </div>
+    </div>
     
+    
+        
       <div class="dropdown">
 
        <div class= "borderYtoX">
@@ -577,60 +611,56 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
           </div>
     <div class="dropdown-content"  style="margin-top: 62px;">
       <a href="http://2018.igem.org/Team:IIT_Delhi/Human_Practices">Human Practices</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Public_Engagement">Education and Engagement</a>
-    
+      <a href="http://2018.igem.org/Team:IIT_Delhi/Public_Engagement">Integrated Practices</a>
+          <a href="http://2018.igem.org/Team:IIT_Delhi/Public_Engagement">Safety</a>
+              <a href="http://2018.igem.org/Team:IIT_Delhi/Public_Engagement">Public Engagement</a>
     </div>
   </div> 
        <div class= "borderYtoX">
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Safety">Safety</a>
+      <a href="http://2018.igem.org/Team:IIT_Delhi/Safety">Modelling</a>
     </div>
     <div class="dropdown">
 
+        
+        
+        
    <div class= "borderYtoX">
     <a href="javascript:void(0)"> Parts </a>
         </div>
     <div class="dropdown-content" style="margin-top: 62px;">
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Parts">Parts Overview</a>
+
       <a href="http://2018.igem.org/Team:IIT_Delhi/Basic_Part">Basic Parts</a>
       <a href="http://2018.igem.org/Team:IIT_Delhi/Composite_Part">Composite Parts</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Part_Collection">Part Collection</a>
+
       
     </div>
   </div>
+
+        	<div class= "borderYtoX">
+   <a href="http://igem.org/2018_Judging_Form?team=IIT_Delhi" >Results</a>
+    </div>
+
+        
+        
+        
       
+
+        
+        
        <div class="dropdown">
           <div class= "borderYtoX">
             <a href="javascript:void(0)"> Project </a>
            </div>
     <div class="dropdown-content"  style="margin-top: 62px;">
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Description">Description</a>
+      <a href="http://2018.igem.org/Team:IIT_Delhi/Description">Overview</a>
       <a href="http://2018.igem.org/Team:IIT_Delhi/Design">Design</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Experiments">Experiments</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Notebook">Notebook</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Interlab">Interlab</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Model">Model</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Results">Results</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Demonstration">Demonstration</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Improve">Improve</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Attributions">Attributions</a>
+      
     </div>
   </div> 
       
       
       
       
-<div class="dropdown">
-   <div class= "borderYtoX">   
-        
-         <a href="javascript:void(0)"> Team </a>
-        
-    </div>
-    <div class="dropdown-content"  style="margin-top: 62px;">
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Team">Team Members</a>
-      <a href="http://2018.igem.org/Team:IIT_Delhi/Collaborations">Collaborations</a>
-        </div>
-    </div>
-    
         
 </div>
 
@@ -639,80 +669,83 @@ var skel=function(){var e="breakpoints",t="config",n="iterate",r="elements",i="s
     
 <!--     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
     
+           
+           
     <div class="overlay-content">
     
- <button class="overlay-btn" style="padding-bottom: 15px;"  onclick="myFunction1()">Team
+        <hr>
+        
+            <button class="overlay-btn2" style="padding-bottom: 15px;padding-top: 15px;align-self: center;font-size: 30px;font-family: raleway;border-color: white;border-style: none; border-image: none;background-color: white;border-width: 0px;cursor: pointer; color: #818181;" onClick="closeNav()" >Close Navigation</button>
+    
+        <hr>
+        
+        <div style="height: 28px;">  </div>
+        
+ <button class="overlay-btn" style="padding-bottom: 15px;"  onclick="myFunction1()">Project
            <i class="fa fa-caret-right"></i>    
     </button>
     
         
         
     <div class="dropdown-container" id="myDropdown1" style= "font-style: italic; ">
-    <a href="#" style="font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px;">Team Members</a>
+    <a href="#" style="font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px;">Overview</a>
     <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
-                       padding-bottom: 0px;" >Collaborations</a>
+                       padding-bottom: 0px;" >Design</a>
      </div>
     
-    <button class="overlay-btn" onclick="myFunction2()" style="padding-bottom: 15px;">Project
+        <a href="#safety" style="padding-bottom: 15px;padding-top: 15px;" >Results</a>
+        
+    <button class="overlay-btn" onclick="myFunction2()" style="padding-bottom: 15px;">Parts
        <i class="fa fa-caret-right"></i>  
     </button>
     
     <div class="dropdown-container" id="myDropdown2" style= "font-style: italic;">
-    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 3px;" >Description</a>
-    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Design</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px; " >Experiments</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px; " >Notebook</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Interlab</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;">Model</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Results</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Demonstration</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Improve</a>
-            <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
-                       padding-bottom: 3px;" >Attributions</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 3px;" >Basic Parts</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding: 10px; padding-bottom: 5px; padding-top: 5px;" >Composite Parts</a>
+          
      </div>
     
-     <button class="overlay-btn" onclick="myFunction3()" style="padding-bottom: 15px;" >Parts
+         <a href="#safety" style="padding-bottom: 15px;padding-top: 15px;" >Modelling</a>
+        
+     <button class="overlay-btn" onclick="myFunction3()" style="padding-bottom: 15px;" >Human Practices
        <i class="fa fa-caret-right"></i>  
     </button>
     
     <div class="dropdown-container" id="myDropdown3" style= "font-style: italic;"  >
-    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px; " >Parts Overview</a>
-    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Basic Parts</a>
-    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Composite Parts</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px; " >Human Practices</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Integrated Practices</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Safety</a>
     <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
-                       padding-bottom: 0px;" >Part Collection</a>
+                       padding-bottom: 0px;" >Public Engagement</a>
      </div>
     
-     <a href="#safety" style="padding-bottom: 15px;padding-top: 15px;" >Safety</a>
+     <a href="#safety" style="padding-bottom: 15px;padding-top: 15px;" >Collaboration</a>
     
-     <button class="overlay-btn" onclick="myFunction4()" style="padding-bottom: 15px;padding-top: 15px;"  >Human Practices
+     <button class="overlay-btn" onclick="myFunction4()" style="padding-bottom: 15px;padding-top: 15px;"  >Team
      <i class="fa fa-caret-right"></i>  
     </button>
     
     <div class="dropdown-container" id="myDropdown4" style= "font-style: italic;">
-    <a href="#" style="font-size: 15px; font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px;" >Human Practices</a>
+    <a href="#" style="font-size: 15px; font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px;padding-bottom: 5px;" >Members</a>
     <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
-                       padding-bottom: 0px;" >Education and Engagement</a>
+                       padding-bottom: 5px;" >Attributions</a>
+         <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
+                       padding-bottom: 0px;" >Sponsors</a>
      </div>
     
-    <button class="overlay-btn" onclick="myFunction5()" style="padding-bottom: 15px;" >Awards
+    <button class="overlay-btn" onclick="myFunction5()" style="padding-bottom: 15px;" >Notebook
       <i class="fa fa-caret-right"></i>  
     </button>
     
      <div class="dropdown-container" id="myDropdown5" style= "font-style: italic;">
-    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px; " >Applied Design</a>
-    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Entrepreneurship</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Hardware</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Measurement</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Model</a>
-            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Plant</a>
-            <a href="#" style="font-size: 15px;padding: 10px; padding-top: 5px;
-                       padding-bottom: 0px;" >Software</a>
-
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 0px; " >Lab Records</a>
+    <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Protocol</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Recipes</a>
+            <a href="#" style="font-size: 15px;font-size: 15px; padding-bottom: 5px; padding: 10px; padding-top: 5px;" >Medal Criteria</a>
+          
      </div>
         
-     <a href="#" style="padding-bottom: 15px;padding-top: 15px;" >Judging Form</a>
-    </div>
+           </div>  
     
 </div>
 	
